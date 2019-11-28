@@ -1,6 +1,6 @@
 # Author: Brian Hoang
-# Date: 11/13/2019
-# Description: Function that takes list and modifies each object to its squared value
+# Date: 11/27/2019
+# Description: tic tac toe class that establishes 3x3 board and allows players to place pieces on board until game is won or drawn
 
 
 class TicTacToe:
@@ -39,6 +39,7 @@ class TicTacToe:
                          self._current_state = "DRAW"
                     return True
             return True
+        #checking same conditions for O player
         if row <= 2 and row >= 0:
             if column <= 2 and column >= 0:
                 # checks for player turn and if board position isn't filled
@@ -62,20 +63,21 @@ class TicTacToe:
                         self._current_state = "DRAW"
                     return True
             return True
-
+        #returns false if input is off of board
         elif row > 2 or row < 0:
             return False
-
+        #returns false if column input is off board
         elif column > 2 or row < 0:
             return False
+        #returns false if player input is not X or O
         elif player != "X" or player != "O":
             return False
-
+        #returns false if game is won or drawn
         elif self._current_state == "X_WON" or self._current_state == "O_WON" or self._current_state == "DRAW":
              return False
 
 
-
+    #get method to return current state of game
     def get_current_state(self):
         return self._current_state
 
