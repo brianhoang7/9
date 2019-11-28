@@ -1,11 +1,9 @@
 class TicTacToe:
 
-    def __init__(self, board, current_state):
-
+    def __init__(self,board,current_state):
         self._board = [[[" "], [" "], [" "]],
                        [[" "], [" "], [" "]],
                        [[" "], [" "], [" "]]]
-
         self._current_state = "UNFINISHED"
 
 
