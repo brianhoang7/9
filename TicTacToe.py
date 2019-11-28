@@ -1,5 +1,5 @@
 class TicTacToe:
-    def __init__(self, board, current_state):
+    def __init__(self, current_state, board):
         self._board = [[[" "], [" "], [" "]],
                        [[" "], [" "], [" "]],
                        [[" "], [" "], [" "]]]
@@ -48,6 +48,8 @@ class TicTacToe:
             return False
 
         elif column > 2 or row < 0:
+            return False
+        elif player != "X" or player != "O":
             return False
 
         elif self._current_state == "X_WON" or self._current_state == "O_WON" or self._current_state == "DRAW":
