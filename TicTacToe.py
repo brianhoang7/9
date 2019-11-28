@@ -1,8 +1,9 @@
 class TicTacToe:
-
-    def __init__(self,board,current_state):
-        self._board = board
-        self._current_state = current_state
+    def __init__(self, board, current_state):
+        self._board = [[[" "], [" "], [" "]],
+                       [[" "], [" "], [" "]],
+                       [[" "], [" "], [" "]]]
+        self._current_state = "UNFINISHED"
 
 
     def make_move(self, row, column, player):
@@ -56,3 +57,4 @@ class TicTacToe:
 
     def get_current_state(self):
         return self._current_state
+
