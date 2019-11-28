@@ -38,6 +38,7 @@ class TicTacToe:
                     if tally == 9 and self._current_state == "UNFINISHED":
                          self._current_state = "DRAW"
                     return True
+            return True
         if row <= 2 and row >= 0:
             if column <= 2 and column >= 0:
                 # checks for player turn and if board position isn't filled
