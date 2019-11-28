@@ -60,6 +60,7 @@ class TicTacToe:
                     if tally == 9 and self._current_state == "UNFINISHED":
                         self._current_state = "DRAW"
                     return True
+                return True
 
         elif row > 2 or row < 0:
             return False
