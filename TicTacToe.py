@@ -1,5 +1,5 @@
 class TicTacToe:
-    def __init__(self, current_state, board):
+    def __init__(self):
         self._board = [[[" "], [" "], [" "]],
                        [[" "], [" "], [" "]],
                        [[" "], [" "], [" "]]]
